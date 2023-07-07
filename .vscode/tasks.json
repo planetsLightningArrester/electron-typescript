@@ -1,0 +1,57 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"dependsOn": "npm: copy-client",
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "tsc: build - tsconfig.json",
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		},
+		{
+			"type": "npm",
+			"script": "clean",
+			"problemMatcher": [],
+			"label": "npm: clean",
+			"detail": "rimraf out",
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		},
+		{
+			"dependsOn": "npm: clean",
+			"type": "npm",
+			"script": "copy-client",
+			"problemMatcher": [],
+			"label": "npm: copy-client",
+			"detail": "run-script-os",
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		}
+	]
+}

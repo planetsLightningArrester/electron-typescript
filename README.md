@@ -38,3 +38,11 @@ It runs `nodemon` which will:
 3. Compile the Typescript inside `src/` to JS inside `out/`
 4. Copy `src/client/` to `out/`, but it's not used
 5. Run the tests inside `src/__tests__/*.spec.ts`, showing the page `http://localhost:5173`
+
+## Debugging
+Pre-configured debugger for Typescript in VSCode:
+* `Electron: Main`: debug the Electron main process
+* `Electron: Renderer`: debug the Electron renderer
+* `Electron: All`: enable both debugs above
+
+> Based on [abartho](https://github.com/abartho/electron-typescript-vscode)'s work
