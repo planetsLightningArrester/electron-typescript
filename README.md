@@ -46,3 +46,5 @@ Pre-configured debugger for Typescript in VSCode:
 * `Electron: All`: enable both debugs above
 
 > Based on [abartho](https://github.com/abartho/electron-typescript-vscode)'s work
+
+Use the [Playwright extension](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright) for VSCode to [debug tests](https://playwright.dev/docs/getting-started-vscode)
