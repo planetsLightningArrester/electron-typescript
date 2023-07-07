@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "exec": "npm run clean && npm run compile && npm run copy-client && electron .",
+  "ext": "js, json, ts, proto, css, html, png, jpeg, jpg, ico"
+}

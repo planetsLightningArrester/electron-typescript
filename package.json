@@ -1,0 +1,28 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/main.js",
+  "scripts": {
+    "clean": "rimraf out",
+    "compile": "tsc -b",
+    "start": "nodemon -L",
+    "start:dev": "run-script-os",
+    "start:dev:default": "NODE_ENV=development && nodemon -L",
+    "start:dev:win32": "set NODE_ENV=development && nodemon -L",
+    "copy-client": "run-script-os",
+    "copy-client:default": "cp -r src/client out",
+    "copy-client:win32": "xcopy src\\client out\\client /e /i /h"
+  },
+  "keywords": [],
+  "author": "planetsLightningArrester",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "electron": "^25.1.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "run-script-os": "^1.1.6",
+    "typescript": "^5.1.3"
+  }
+}
