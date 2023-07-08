@@ -27,7 +27,7 @@
 			"script": "clean",
 			"problemMatcher": [],
 			"label": "npm: clean",
-			"detail": "rimraf out",
+			"detail": "rimraf dist",
 			"presentation": {
 				"echo": true,
 				"reveal": "never",

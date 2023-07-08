@@ -1,5 +1,6 @@
 import path from 'path';
 import { app, BrowserWindow } from 'electron';
+import {ForgeConfig} from '@electron-forge/shared-types';
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -12,7 +13,7 @@ function createWindow () {
   
   const nodeEnv = (process.env['NODE_ENV'] || '').trim();
   if (nodeEnv === 'development') win.loadURL('http://localhost:5173/')
-  else win.loadFile('./out/client/index.html')
+  else win.loadFile('./dist/client/index.html')
 
 }
 

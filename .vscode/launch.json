@@ -21,7 +21,7 @@
       "outputCapture": "std",
       "sourceMaps": true,
       "resolveSourceMapLocations": [
-        "${workspaceFolder}/out/**",    // use source maps for files in workspace folder
+        "${workspaceFolder}/dist/**",    // use source maps for files in workspace folder
         "!**/node_modules/**"           // but ignore everything in the node_modules folder
       ],
       "preLaunchTask": "${defaultBuildTask}",
