@@ -1,6 +1,5 @@
 import path from 'path';
 import { app, BrowserWindow } from 'electron';
-import {ForgeConfig} from '@electron-forge/shared-types';
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -8,7 +7,8 @@ function createWindow () {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    icon: path.join(__dirname, 'images', 'icon.png')
   });
   
   const nodeEnv = (process.env['NODE_ENV'] || '').trim();
